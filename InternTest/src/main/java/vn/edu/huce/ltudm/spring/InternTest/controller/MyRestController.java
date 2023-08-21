@@ -101,7 +101,7 @@ public class MyRestController {
     }
 
     // Xem tien lai theo tuan duoc chi dinh
-    @GetMapping("/week/{week}")
+    @GetMapping("interest/week/{week}")
     public int getInterestOneWeek(@PathVariable Integer week) {
         return statisticsService.getInterestWeek(week);
     }
